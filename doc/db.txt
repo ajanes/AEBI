@@ -1,0 +1,25 @@
+DB structure
+
+Patients
+- id
+- first_name (string)
+- last_name (string)
+- fiscal_code (string)
+- password (string)
+- doctor_id 
+
+Doctors
+- id
+- first_name (string)
+- last_name (string)
+- user_name (string)
+- password (string)
+
+Measurements
+- date_time (datetime)
+- temperature (float)
+- patient_id
+
+Possible additional table: Treatment
+- patient_id
+- doctor_id
