@@ -6,5 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/ajanes/Documents/git/AEBI/jar/postgresql-42.2.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
