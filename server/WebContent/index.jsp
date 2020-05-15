@@ -14,6 +14,10 @@ Welcome to our library!
 <a href="list.jsp">Click here to see the list of books!</a>
 </div>
 
+<%
+	out.write("HELLO");
+%>
 
+<%=123456 %>
 </body>
 </html>

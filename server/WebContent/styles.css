@@ -7,3 +7,13 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+.button {
+  font: 11px Arial;
+  text-decoration: none;
+  background-color: lightgray;
+  color: #333333;
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}

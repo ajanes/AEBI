@@ -1,5 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="library.*" %>
+<%@ page import="java.util.ArrayList" %>
+
 <!doctype html>
 
 <html lang="en">
@@ -22,18 +24,24 @@
             <th>Author</th>
             <td></td>
         </tr>
+        
+        <%
+	        Library l = new Library();
+	        ArrayList<Book> books = l.getBooks();
+	        for (int i=0; i<books.size(); i++) {
+	        	Book b = books.get(i);
+        %>
+        
         <tr>
-            <td>1</td>
-            <td>Title 1</td>
-            <td>Author 1</td>
-            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+            <td><%=b.id %></td>
+            <td><%=b.title %></td>
+            <td><%=b.author_first_name + " " + b.author_last_name %></td>
+            <td><a href="edit.jsp?id=<%=b.id %>">Edit</a> | <a href="delete.jsp?id=<%=b.id %>">Delete</a></td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>Title 2</td>
-            <td>Author 2</td>
-            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
-        </tr>
+        
+        <%
+        	}
+        %>
     </table>
 </body>
 
